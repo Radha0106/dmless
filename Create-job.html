@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Hiring Link - dmless</title>
+  <link rel="stylesheet" href="Sytle.css">
+</head>
+<body>
+
+  <nav>
+    <h2>dmless</h2>
+    <div>
+      <a href="dashboard.html">Dashboard</a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="card">
+      <h2 style="margin-bottom:20px;">Create Hiring Link</h2>
+
+      <!-- Job Details Section -->
+      <div style="margin-bottom:30px;">
+        <label>Job Title</label>
+        <input type="text" id="title" placeholder="Software Engineer">
+
+        <label>Job Description</label>
+        <textarea id="description" placeholder="Write job description here..."></textarea>
+      </div>
+
+    <h3>Screening Questions</h3>
+
+<div id="questions">
+
+  <!-- Question Template -->
+  <div class="question-card">
+    <h4>Question 1</h4>
+    <input type="text" id="q1" placeholder="Enter Question">
+    <input type="text" id="q1a" placeholder="Option A">
+    <input type="text" id="q1b" placeholder="Option B">
+    <input type="text" id="q1c" placeholder="Option C">
+    <input type="text" id="q1d" placeholder="Option D">
+    <input type="text" id="q1correct" placeholder="Correct Answer (A/B/C/D)">
+  </div>
+
+  <div class="question-card">
+    <h4>Question 2</h4>
+    <input type="text" id="q2" placeholder="Enter Question">
+    <input type="text" id="q2a" placeholder="Option A">
+    <input type="text" id="q2b" placeholder="Option B">
+    <input type="text" id="q2c" placeholder="Option C">
+    <input type="text" id="q2d" placeholder="Option D">
+    <input type="text" id="q2correct" placeholder="Correct Answer (A/B/C/D)">
+  </div>
+
+  <div class="question-card">
+    <h4>Question 3</h4>
+    <input type="text" id="q3" placeholder="Enter Question">
+    <input type="text" id="q3a" placeholder="Option A">
+    <input type="text" id="q3b" placeholder="Option B">
+    <input type="text" id="q3c" placeholder="Option C">
+    <input type="text" id="q3d" placeholder="Option D">
+    <input type="text" id="q3correct" placeholder="Correct Answer (A/B/C/D)">
+  </div>
+
+  <div class="question-card">
+    <h4>Question 4</h4>
+    <input type="text" id="q4" placeholder="Enter Question">
+    <input type="text" id="q4a" placeholder="Option A">
+    <input type="text" id="q4b" placeholder="Option B">
+    <input type="text" id="q4c" placeholder="Option C">
+    <input type="text" id="q4d" placeholder="Option D">
+    <input type="text" id="q4correct" placeholder="Correct Answer (A/B/C/D)">
+  </div>
+
+  <div class="question-card">
+    <h4>Question 5</h4>
+    <input type="text" id="q5" placeholder="Enter Question">
+    <input type="text" id="q5a" placeholder="Option A">
+    <input type="text" id="q5b" placeholder="Option B">
+    <input type="text" id="q5c" placeholder="Option C">
+    <input type="text" id="q5d" placeholder="Option D">
+    <input type="text" id="q5correct" placeholder="Correct Answer (A/B/C/D)">
+  </div>
+
+</div>
+
+          <input type="text" id="q1correct" placeholder="Correct Answer (A/B/C/D)">
+
+        </div>
+      </div>
+
+      <div style="margin-top:25px;">
+        <button onclick="saveJob()">Generate Hiring Link</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

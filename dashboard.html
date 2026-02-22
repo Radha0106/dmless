@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard - dmless</title>
+  <link rel="stylesheet" href="Sytle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h2>dmless</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <button onclick="logout()" style="margin-left:15px;">Logout</button>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTAINER -->
+  <div class="container">
+
+    <h2 id="welcomeText" style="margin-bottom:25px;">
+      Recruiter Dashboard
+    </h2>
+<!-- Stats Section -->
+    <div class="stats">
+
+  <div class="stat-card blue">
+    <h3>Total Applied</h3>
+    <p id="totalCount">0</p>
+  </div>
+
+  <div class="stat-card red">
+    <h3>Knocked Out</h3>
+    <p id="knockedCount">0</p>
+  </div>
+
+  <div class="stat-card green">
+    <h3>Shortlisted</h3>
+    <p id="shortlistedCount">0</p>
+  </div>
+
+</div>
+
+    <!-- Create Job Button -->
+    <div style="margin:25px 0;">
+      <a href="create-job.html">
+        <button>Create New Hiring Link</button>
+      </a>
+    </div>
+
+    <!-- Jobs Section -->
+    <div class="card">
+      <h3 style="margin-bottom:20px;">Jobs Created</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Job Role</th>
+            <th>Applicants</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody id="jobList">
+          <!-- JS will insert jobs here -->
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+  <div class="stats">
+
+  <div class="stat-card blue">
+    <h3>Total Applied</h3>
+    <p id="totalCount">0</p>
+  </div>
+
+  <div class="stat-card red">
+    <h3>Knocked Out</h3>
+    <p id="knockedCount">0</p>
+  </div>
+
+  <div class="stat-card green">
+    <h3>Shortlisted</h3>
+    <p id="shortlistedCount">0</p>
+  </div>
+
+</div>
+</body>
+</html>
